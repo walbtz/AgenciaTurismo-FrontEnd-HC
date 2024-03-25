@@ -9,7 +9,7 @@ import { LoginService } from '../../service/login.service';
 })
 export class LoginComponent {
   usuarios: Login[];
-  credecialesLogin: Login;
+  credecialesLogin: Login = new Login;
   userExist: boolean = false;
 
   constructor(private loginService: LoginService){}
