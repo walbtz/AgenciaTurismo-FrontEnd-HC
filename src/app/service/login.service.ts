@@ -17,6 +17,6 @@ export class LoginService {
 
   enviarCredenciales(login: Login): Observable<Object>{
     //Devolver el empleado según el login
-    return this.clienteHttp.post(this.urlBase, Employee);
+    return this.clienteHttp.post(this.urlBase, login);
   }
 }
